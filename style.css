@@ -71,34 +71,17 @@ header {
 }
 
 .header__form {
-    display: flex;
-    align-items: center;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
-.header__form input {
-    background: transparent;
-    outline: 0;
-    border: 0;
-    border-bottom: 2px solid #ffffff60;
-    margin-right: 60px;
-
-    padding-bottom: 20px;
-    padding-left: 30px;
-    font-family: "Lato", sans-serif;
-    width: 250px;
-    caret-color: white;
-    color: white;
+.input__wrapper {
+    position: relative;
 }
 
-.header__form input::placeholder {
-    color: #fff;
-}
-
-.header__form > .input__wrapper::before {
+.input__wrapper::after {
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     border: 2px solid #fff;
     position: absolute;
@@ -106,18 +89,12 @@ header {
     top: 0;
 }
 
-.header__form > .input__wrapper {
-    position: relative;
-}
-
-.header__form > button {
-    padding: 15px 30px;
-    background-color: dodgerblue;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: "Lato", sans-serif;
+.input__wrapper > input {
+    width: 250px;
+    height: 50px;
+    background: transparent;
     outline: 0;
     border: 0;
-    font-weight: 500;
-    font-size: 16px;
+    border-bottom: 2px solid #fff;
 }
+
