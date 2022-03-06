@@ -54,47 +54,90 @@ header {
 }
 
 .header__block {
-    color: #fff;
-    margin-top: 175px;
-    font-family: "Lato", sans-serif;
+  color: #fff;
+  margin-top: 175px;
+  font-family: "Lato", sans-serif;
 }
 
 .header__slogan {
-    margin-bottom: 20px;
-    font-weight: 500;
+  margin-bottom: 20px;
+  font-weight: 500;
 }
 
 .header__description {
-    opacity: .8;
-    font-size: 16px;
-    font-weight: normal;
+  opacity: 0.8;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .header__form {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .input__wrapper {
-    position: relative;
+  position: relative;
+  /* TODO: */
+  margin-right: 60px;
 }
 
 .input__wrapper::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* TODO: */
+.input__wrapper > input::placeholder {
+  /* TODO: */
+  color: #fefefe;
 }
 
 .input__wrapper > input {
-    width: 250px;
-    height: 50px;
-    background: transparent;
-    outline: 0;
-    border: 0;
-    border-bottom: 2px solid #fff;
+  /* TODO: */
+  padding-left: 35px;
+  /* TODO: */
+  color: #fefefe;
+  /* TODO: */
+  padding-bottom: 15px;
+  /* TODO: */
+  font-size: 18px;
+
+  width: 250px;
+  height: 50px;
+  background: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 2px solid #fff;
 }
 
+/* TODO: */
+.btn {
+  padding: 15px 40px;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  background-color: #1b7dff;
+  /* TODO: */
+  text-transform: uppercase;
+  color: #fefefe;
+  /* Внутренний отступ */
+  border: 0;
+  /* Наружний отступ */
+  outline: 0;
+  /* Курсор */
+  cursor: pointer;
+  /* Плавность */
+  /* TODO: */
+  transition: background-color 0.2s;
+}
+
+/* TODO: */
+.btn:hover {
+  /* 1974ec */
+  /* TODO: */
+  background-color: crimson;
+}
